@@ -19,8 +19,8 @@
 	},
 	"require": {
 		"php": ">=7.1",
-		"guzzlehttp/guzzle": "^6.2|^7.0.1",
-    },
+		"guzzlehttp/guzzle": "^6.2|^7.0.1"
+	},
 	"require-dev": {
 		"phpunit/phpunit" : "6.2.2",
 		"roave/better-reflection": "@dev"
