@@ -30,14 +30,14 @@ class TestStatusDetail
 
 	/**
 	 * TestStatusDetail constructor.
-	 * @param \DateTimeImmutable $submitted
-	 * @param int $attempts
-	 * @param \DateTimeImmutable|null $completed
+	 * @param null|\DateTimeImmutable $submitted
+	 * @param null|int $attempts
+	 * @param null|\DateTimeImmutable $completed
 	 * @param null|string $bounce_code
 	 * @param null|string $bounce_message
 	 */
 	public function __construct(
-		\DateTimeImmutable $submitted,
+		?\DateTimeImmutable $submitted = null,
 		?int $attempts = null,
 		?\DateTimeImmutable $completed = null,
 		?string $bounce_code = null,

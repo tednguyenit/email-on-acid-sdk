@@ -119,7 +119,7 @@ class Service extends BaseService
 			$this->validator->validateGetResults($client_data);
 			$status_detail_data = $client_data['status_details'];
 			$status_detail = new TestStatusDetail(
-				\DateTimeImmutable::createFromFormat('U', $status_detail_data['submitted']),
+                isset($status_detail_data['submitted']) ? \DateTimeImmutable::createFromFormat('U', $status_detail_data['submitted']) : null,
 				isset($status_detail_data['attempts']) ? $status_detail_data['attempts'] : null,
 				isset($status_detail_data['completed']) ? \DateTimeImmutable::createFromFormat('U', $status_detail_data['completed']) : null,
 				isset($status_detail_data['bounce_code']) ? $status_detail_data['bounce_code'] : null,

@@ -34,7 +34,7 @@ class Validator extends BaseValidator
 	public function validateGetResults(array $response)
 	{
 		$this->validateArrayData($response, ['id', 'display_name', 'client', 'os', 'category', 'screenshots', 'status', 'status_details']);
-		$this->validateArrayData($response['status_details'], ['submitted']);
+		// $this->validateArrayData($response['status_details'], ['submitted']);
 	}
 
 	/**
